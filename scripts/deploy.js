@@ -1,8 +1,8 @@
 const {ethers} =require("hardhat");
 
 async function main(){
-    const whitelistcontract = await ethers.getContractFactory("whitelist");
-    const deployedwhitelistcontract = await whitelistcontract.deploy(15);
+    const viper = await ethers.getContractFactory("viper");
+    const deployedvipercontract = await vipercontract.deploy(1);
     await deployedwhitelistcontract.deployed();
     console.log("whitelist contract address", deployedwhitelistcontract.address);
      
